@@ -5,6 +5,7 @@ import requests
 
 scores = {"home": 0, "away": 0}
 
+
 def update_score(team, points):
     scores[team] += points
     update_score_display()
