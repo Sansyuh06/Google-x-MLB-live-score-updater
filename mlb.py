@@ -44,7 +44,7 @@ def get_logo_url(team_name):
         return data.get("logo_url")
     except requests.RequestException:
         return None
-
+print("hello")
 def get_logo_image(logo_url):
     try:
         response = requests.get(logo_url, stream=True)
